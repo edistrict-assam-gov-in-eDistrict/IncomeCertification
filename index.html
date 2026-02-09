@@ -520,10 +520,16 @@
                   <span class="editable" contenteditable="true"
                     >KRITIKA SARMAH</span
                   ><br />
-                  Date:
-                  <span class="editable" contenteditable="true"
-                    >12-Dec-2025 12:41:45</span
-                  ><br />
+                 Date:
+<span
+  class="editable"
+  id="signedDate"
+  data-field="signedDate"
+  contenteditable="true"
+>
+  12-Dec-2025 12:41:45
+</span>
+<br />
                   Reason: eDistrict<br />
                   Location: Assam
                 </div>
@@ -688,6 +694,8 @@
           words: document.getElementById("amountWords").innerText.trim(),
           cscName: document.getElementById("cscName").innerText.trim(),
           cscId: document.getElementById("cscId").innerText.trim(),
+          signedDate: document.getElementById("signedDate").innerText.trim(),
+
         };
       }
 
@@ -708,6 +716,8 @@
             data.words,
             data.cscName,
             data.cscId,
+            data.signedDate
+
             
           ];
           return btoa(unescape(encodeURIComponent(JSON.stringify(arr))));
@@ -794,5 +804,6 @@
     </script>
   </body>
 </html>
+
 
 
